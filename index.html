@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pure BeefHub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Pure BeefHub</h1>
+        <em><p>Fresh cuts, full flavor.</p></em>
+    </header>
+
+    <section class="products">
+        <h2>Our Beef Cuts</h2>
+
+        <div class="product">
+            <h3>Ribeye Steak</h3>
+            <p>Premium tender cut</p>
+            <button onclick="order('Ribeye Steak')">Order</button>
+        </div>
+
+        <div class="product">
+            <h3>Minced Beef</h3>
+            <button onclick="order('Minced Beef')">Order</button>
+        </div>
+
+        <div class="product">
+            <h3>Oxtail</h3>
+            <button onclick="order('Oxtail')">Order</button>
+        </div>
+
+    </section>
+    <section class="order-form">
+        <h2>Place Your Order</h2>
+        <form>
+            <input type="text"placeholder="Enter your name" required>
+            <input type="tel"placeholder="phone number"required>
+            <select requred>
+                <option value="">Select Beef Part</option>
+                <option>Ribeye Steak</option>
+                <option>Minced Beef</option>
+                <option>Oxtail</option>
+                <option>Liver</option>
+            </select>
+
+            <input type="number" placeholder="Quantity in KG" required>
+            <button type="submit">Order Now</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-image: url('beef.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: darken;
+}
+.order-form {
+    background: black;
+
+
+}
+
+header {
+    background: #8B0000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.products {
+    padding: 20px;
+    
+}
+
+.product {
+    background: ;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 10px;
+    
+}
+
+button {
+    background: #8B0000;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #a30000;
+}
+
+
+section {
+    color: white;
+}
